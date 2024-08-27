@@ -1,0 +1,48 @@
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px DimGray(0,0,0,0.1);
+    width: 300px;
+    position: relative;
+    left: -200px; /* Adjust as needed */
+    top: 60px;
+    box-sizing: border-box;
+}
+
+
+.form-container h2 {
+    text-align: center;
+    color: blue;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #004494;
+}
+
+.label {
+    color: blue;
+    display: block;
+    margin-bottom: 5px;
+}

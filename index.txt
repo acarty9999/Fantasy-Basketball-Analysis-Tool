@@ -1,0 +1,131 @@
+<?php
+
+#HOME PAGE
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+            
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+}
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<!--HOME PAGE-->
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <style>
+        body, html {
+    	height: 100%;
+    	margin: 0;
+    	display: flex;
+    	justify-content: center;
+    	align-items: flex-start; 
+    	background-color: white;
+    	color: black;
+	}
+
+	h1, #links {
+    	text-align: center; 
+	     margin-top: 20px; 
+	}
+
+        a {
+            color: blue; 
+        }
+    </style>
+</head>
+<body>
+	<style type= "text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: darkgoldenrod; font-family: Arial; padding-right: 15px; padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		
+		.logo1 img {
+    		max-width: 100px;
+    		height: auto;
+		}
+
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+
+		li{
+			list-style: none; display: inline-block; 
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px; 
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; size: 15px;
+		}
+    </style>
+
+	<nav class = "navbar">
+		<div class="navdiv">
+			<div class="logo1"><a href="#"><img src="FH.png" alt="FantasyHoopsInsight"></a></div>
+			<div class="logo"><a href="#">FantasyHoopsInsight</a></div>
+			<ul>
+				<li><a href="insertTeam.php">Insert Team</a></li>
+				<li><a href="viewPlayers.php">View Players</a></li>
+				<li><a href="savedComps.php">Saved Comps</a></li>
+				<button><a href="logout.php">Logout</a></button>
+			</ul>
+		</div>
+
+		<div style="text-align: center;">
+    	<ul>
+        <li><a href="apiCheck.php">API Checker</a></li>
+    	</ul>
+</div>
+
+
+    <!--- <h1>FantasyHoopsInsight</h1> -->
+    
+    <?php if (isset($user)): ?>
+        
+        <!-- <p>Hello <?= htmlspecialchars($user["name"]) ?></p> -->
+        
+        <!-- <p><a href="logout.php">Log out</a></p>  Hello Name. Log into Home now? -->
+        
+    <?php else: ?>
+    
+	<!---
+    <div id="links">
+    	<p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+	</div>
+	--->
+
+        
+    <?php endif; ?>
+    
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
