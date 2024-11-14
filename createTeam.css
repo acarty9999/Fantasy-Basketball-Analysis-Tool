@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container input[type="text"] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 3px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+}
+
+.button {
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.player-list {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.player-list p {
+    margin: 5px 0;
+}

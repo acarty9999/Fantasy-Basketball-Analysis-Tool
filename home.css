@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left, red 25%, darkblue 60%);
+}
+
+.navi-logo img {
+    height: 100px;
+}
+
+
+.navi-logo{
+    background: linear-gradient(to left, red 25%, darkblue 60%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1.5px solid black;
+}
+
+.navi-logo a {
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    
+}
+
+.navi-logo h2{
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+}
+
+.links {
+    display:flex;
+    margin: 2px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.links ul {
+    display: flex;
+    margin-right: 2px;
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links a {
+    color: white;
+}
+
+#bg-image1 {
+    float: right;
+    width: 45%;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 1%;
+    opacity: 65%;
+}
+
+.bgIMG {
+    width: 35%;
+    height: auto;
+    margin-top: 0%;
+    margin-right: 1%;
+    opacity: 65%;
+}
+
+.page1_msg{
+    font-family: Montserrat, sans-serif;
+    font-size: 32.5px;
+    color: white;
+    font-weight: thin;
+    letter-spacing: 4px; 
+    margin-bottom: 4%;
+    margin-top: 1%;
+    text-align: center;
+}
+.page2_msg{
+    font-family: Montserrat, sans-serif;
+    font-size: 32.5px;
+    color: white;
+    font-weight: thin;
+    letter-spacing: 4px; 
+    margin-bottom: 3%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#msg1{
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0px; 
+}
+
+#msg2{
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0px; 
+}
+
+.text{
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+#logout-link {
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+  }
+  
+  #logout-link:hover {
+    color: rgb(61, 61, 61);
+  }
